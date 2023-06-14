@@ -1,9 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css';
-@media screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
 .container {
@@ -45,17 +46,6 @@ div#rightpane.right-col {
 div#centerpane.center-col {
     width: 760px;
     padding: 10px;
-}
-/* This media query will apply when the viewport is 800px or less */
-@media screen and (max-width: 800px) {
-    div#leftpane.left-col,
-    div#rightpane.right-col {
-        display: none;
-    }
-
-    div#centerpane.center-col {
-        width: 100%;
-    }
 }
 #background * {
     box-sizing: border-box;
