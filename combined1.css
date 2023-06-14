@@ -1,1284 +1,575 @@
-@import 'https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700';
-@import 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css';
-
-/* Header Css */
-
-.left-col,
-.right-col,
-.center-col {
-    float: left;
-    padding: 10px;
-}
-
-div#leftpane.left-col,
-div#rightpane.right-col {
-    width: 170px;
-    padding: 10px;
-}
-
-div#centerpane.center-col {
-    width: 760px;
-    padding: 10px;
-}
-
-#background * {
-    box-sizing: border-box;
-}
-
-#header,
-#subheader,
-div.subheader,
-div.boxtitle,
-div.boxcontent,
-div.left-col,
-div.right-col,
-div.top-bar,
-div.footer,
-#more_items_content,
-#leftpane,
-#rightpane,
-#showcase ul,
-ul.tablinks,
-#largeimage,
-#design,
-#customhtml,
-#descriptiontitle,
-#ImageID {
-    display: block;
-}
-
-.hidden,
-.mobile_only {
-    display: none;
-    /* RESET FOR NO SUBS */
-}
-
-.container .header-wrapper,
-.container .subheader-wrapper,
-.container .left-col,
-.container .right-col,
-.container .footer-wrapper,
-.container .boxcontent,
-.container #showcase,
-.container #tab1,
-.container #descriptiontitle {
-    display: block;
-}
-
-.clear {
-    clear: both;
-}
-
-#background {
-    font-size: 10px;
-    background-color: #fff;
-}
-
-.page {
-    width: 100%;
-    font-family: 'Titillium Web', sans-serif;
-    background: none;
-    color: #333;
-}
-
-.page td,
-.page .g-std {
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.cols {
-    background: none center center;
-    display: flex;
-}
-
-.col-wrapper {
-    background: none center center;
-}
-
-.accent {
-    color:#0a7eff;
-}
-
-/* experimental after before stuff */
-.infobox
-.row:after,
-.row:before {
-    display: table;
-    content: " "
-}
-
-.infobox
-.row:after {
-    clear: both
-}
-/* end of experimental */ 
-div.row {
-    width: 1100px;
-    margin: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    width: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.container .g-novisited a:visited {
-    outline: none;
-}
-
-.container a {
-    text-decoration: none;
-}
-
-.container a:link {
-    outline: none;
-}
-
-.container a:visited {
-    outline: none;
-}
-
-.container a:active {
-    outline: none;
-}
-
-.container a:hover {
-    text-decoration: underline;
-    outline: none;
-}
-
-a.homelink {
-    display: block;
-    width: 100%;
-    width: 800px;
-    height: 160px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  
-  a.homelink::before {
-    content: "";
-    display: block;
-    width: 70%;
-    height: 80%;
-    margin: auto;
-    background: url("https://i.imgur.com/bCgjreY.jpg") no-repeat center/contain;
-  }
-
-
-div#header {
-    float: none;
-    position: relative;
-    background: #057ac0 center center;
-    height: 160px;
-    /* End Header */
-}
-
-.subheader-wrapper {
-    background: none;
-    border: none;
-}
-
-.subheader {
-    position: relative;
-    z-index: 10;
-    background: none;
-    height: 47px;
-}
-
-.subheader .infobox {
-    margin-top: -25px;
-}
-
-.subheader .infobox ul {
-    padding: 0;
-    margin: 0 10px;
-    list-style: none;
-}
-
-.subheader .infobox ul:after {
-    clear: both;
-    display: block;
-    content: '';
-}
-
-.subheader .infobox ul li {
-    float: left;
-    width: 360px;
-    border: 2px solid #fff;
-    text-align: center;
-    background: #3b9ac0;
-    height: 50px;
-}
-
-.subheader .infobox ul li h2 {
-    padding: 0;
-    margin: 3px 0 -7px;
-    color: #fff;
-    font-weight: 400;
-    font-size: 17px;
-    cursor: default;
-    text-transform: uppercase;
-}
-
-.subheader .infobox ul li span {
-    color: #fff;
-    font-size: 13px;
-    cursor: default;
-}
-
-.subheader .infobox ul li:nth-child(2n) {
-    border-left: 0;
-    border-right: 0;
-    background: #005eb8;
-}
-
-ul#nav li {
-    display: none;
-}
-
-.cols ul.categories,
-.cols .boxlinks {
-    font-size: 1.5em;
-    font-weight: normal;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-}
-
-.cols ul.categories ul {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-}
-
-.cols ul.categories li {
-    padding: 0px;
-    margin: 0px;
-    display: block;
-}
-
-.cols ul.categories li a,
-.cols .boxlinks a {
-    text-align: left;
-    background: none;
-    display: block;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #e5e5e5;
-    color: #333;
-    text-decoration: none;
-    padding: 5px;
-    width: 100%;
-    height: auto;
-}
-
-.cols ul.categories li a:hover,
-.cols .boxlinks a:hover {
-    background: #3b9ac0;
-    color: #fff;
-    border-top: 1px solid #3b9ac0;
-    border-bottom: 1px solid #3b9ac0;
-    text-decoration: none;
-}
-
-.cols ul.categories li:first-child,
-.cols .boxlinks:first-child {
-    border-top: none;
-}
-
-.cols ul.categories li:first-child:hover,
-.cols .boxlinks:first-child:hover {
-    border-top: none;
-}
-
-.cols ul.subCats li a {
-    padding: 5px 5px 5px 12px;
-}
-
-.cols ul.subSubCats li a {
-    padding: 5px 5px 5px 12px;
-}
-
-#categories a:after {
-    color: #333;
-    font-size: 12px;
-    font-weight: normal;
-}
-
-#categories a:hover:after {
-    color: #fff;
-}
-
-#shoppages.boxtitle {
-    display: none;
-}
-
-.right-col ul.brands li,
-.left-col ul.brands li {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-}
-
-.right-col ul.brands li img,
-.left-col ul.brands li img {
-    max-width: 100%;
-}
-
-#categories a {
-    display: none;
-}
-
-#more_items_base {
-    clear: both;
-}
-
-.right-col a.nspromoitem,
-.left-col a.nspromoitem {
-    display: none;
-    background-position: center center;
-    width: auto;
-    height: 200px;
-    margin-bottom: 5px;
-}
-
-.boxtitle,
-#descriptiontitle {
-    margin: 10px 0px 0px 0px;
-    padding: 0 10px;
-    background: #005eb8;
-    color: #fff;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.4em;
-    height: 30px;
-    line-height: 30px;
-    cursor: default;
-    text-transform: uppercase;
-    border-radius: 0px 0px 0px 0px;
-}
-
-#categories .boxtitle,
-#helpful_links,
-.categories .boxtitle,
-.categories h2.boxtitle,
-.pages .boxtitle {
-    background: #005eb8;
-    color: #fff;
-}
-
-.boxcontent,
-.cols .search .searchform {
-    padding: 5px;
-    background: none;
-    background-position: center bottom;
-    color: #666;
-    font-size: 1.6em;
-    border-top: none;
-    border-bottom: 0px solid #e5e5e5;
-    border-left: 0px solid #e5e5e5;
-    border-radius: 0px 0px 0px 0px;
-    border-right: 0px solid #e5e5e5;
-}
-
-.boxcontent a:hover,
-.cols .search .searchform a:hover {
-    color: #196696;
-    text-decoration: none;
-}
-
-.boxcontent a {
-    color: #666;
-}
-
-.boxcontent a a:hover {
-    color: #196696;
-    text-decoration: none;
-}
-
-.boxlinks {
-    border: none;
-}
-
-.boxbase {
-    display: none;
-}
-
-.cols .search form input.searchbox,
-.cols .search #search form input.searchbox {
-    padding: 5px;
-    height: 30px;
-    border: 1px solid #e5e5e5;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.cols .search form input.submitbox,
-.cols .search #search form input.submitbox {
-    background: #196696;
-    border-radius: 0px;
-    border: none;
-    padding: 5px;
-    height: 30px;
-    width: auto;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.cols .search form input.submitbox:hover,
-.cols .search #search form input.submitbox:hover {
-    background: #606696;
-}
-
-#more_items.boxtitle {
-    font-size: 0;
-}
-
-#more_items.boxtitle:after {
-    content: 'Similar Items';
-    font-size: 14px;
-}
-
-#showcase,
-.itemtitle,
-.item-details {
-    display: block;
-}
-
-#showcase h3,
-.itemtitle h3,
-.item-details h3 {
-    color: #005eb8 ;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2.2em;
-    margin: 10px 0px;
-    line-height: 1.3em;
-    font-weight: 700;
-}
-
-#showcase::after,
-.itemtitle::after,
-.item-details::after {
-    clear: both;
-    content: " ";
-}
-
-.leftarrow,
-.rightarrow {
-    display: none;
-    height: 100%;
-    top: 0px;
-    width: 10%;
-    position: absolute;
-    z-index: 5;
-    padding: 1%;
-    cursor: pointer;
-    opacity: 0.4;
-}
-
-.leftarrow:hover,
-.rightarrow:hover {
-    opacity: 0.7;
-}
-
-.leftarrow span,
-.rightarrow span {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size: 35px;
-    color: #eee;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    text-align: center;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.leftarrow {
-    left: 15px;
-    text-align: left;
-}
-
-.leftarrow span:before {
-    content: "\f0a8";
-    font-family: "fontawesome";
-}
-
-.rightarrow {
-    right: 15px;
-    text-align: right;
-}
-
-.rightarrow span:before {
-    content: "\f0a9";
-    font-family: "fontawesome";
-}
-
-.g_image:first-child .leftarrow {
-    display: none;
-}
-
-.rightarrow[data-next-image=""],
-.rightarrow[data-next-image="<!-- missing"] {
-    display: none;
-}
-
-.g_image .thumbimage li {
-    border: 1px solid #ccc;
-    width: 76px;
-    height: 76px;
-    margin-bottom: 5px;
-    opacity: 1;
-    position: relative;
-    cursor: pointer;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    display: block;
-    padding: 1px;
-    background: #0000;
-}
-
-.g_image .thumbimage li:hover {
-    opacity: 0.7;
-}
-
-.g_image .thumbimage li img {
-    max-width: 72px;
-    max-height: 72px;
-    width: auto;
-    height: auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-#gallery [type=radio]:checked ~ .thumbimage li {
-    border: 1px solid#0a7eff;
-}
-
-#gallery_outer_1,
-#gallery_outer_3 {
-    position: relative;
-    clear: both;
-    margin: 0px 0px 20px 0px;
-}
-
-.g_image [type=radio] {
-    display: none;
-}
-
-.mainimage {
-    position: absolute;
-    top: 0px;
-    margin: 0px 0px 0px 0px;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    text-align: center;
-    opacity: 0;
-    cursor: pointer;
-    animation-name: lightboxout;
-    animation-duration: 0.5s;
-}
-
-@keyframes lightbox {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes lightboxout {
-    from {
-        transform: scale(1.5);
-    }
-    to {
-        background: rgba(0, 0, 0, 0);
-        transform: scale(1);
-    }
-}
-
-#gallery [type=radio]:checked ~ .thumbimage {
-    color: #fff;
-    z-index: 1;
-}
-
-#gallery [type=radio]:checked ~ .mainimage {
-    opacity: 1;
-    z-index: 2;
-    padding: 0px 0px 0px 0px;
-}
-
-#gallery_outer_1 .g_image[data=""] {
-    display: none;
-}
-
-#gallery [type=checkbox]:checked ~ .mainimage {
-    right: 0px;
-    z-index: 100;
-    background: #fff;
-}
-
-#gallery [type=checkbox]:checked ~ .mainimage img {
-    display: block;
-    margin: 0px auto;
-}
-
-#gallery [type="checkbox"]:checked ~ .mainimage span {
-    display: none;
-}
-
-.mainimagecb {
-    display: none;
-}
-
-#gallery_outer_1,
-#gallery_outer_1 .mainimage,
-#gallery_outer_1 #gallery,
-#gallery_outer_1 .mainimage div {
-    height: 324px;
-    width: auto;
-}
-
-#gallery_outer_1 .mainimage {
-    left: 112px;
-    min-width: 608px;
-}
-
-#gallery_outer_1 #gallery {
-    box-sizing: border-box;
-    clear: both;
-    overflow-y: auto;
-    overflow-x: hidden;
-    direction: rtl;
-    padding: 0px 5px 0px 8px;
-    margin: 0px;
-}
-
-@media screen and (min-resolution: 0.001dpcm) {
-    #gallery_outer_1 #gallery {
-        padding: 0px 0px 0px 15px;
-    }
-}
-
-@supports (-ms-accelerator:true) {
-    #gallery_outer_1 #gallery {
-        padding: 0px 0px 0px 10px;
-    }
-}
-
-#gallery_outer_1 div#gallery::-webkit-scrollbar {
-    width: 8px;
-    height: 20px;
-}
-
-#gallery_outer_1 div#gallery::-webkit-scrollbar-button {
-    background-color: #ccc;
-}
-
-#gallery_outer_1 div#gallery::-webkit-scrollbar-track {
-    background-color: #ccc;
-}
-
-#gallery_outer_1 div#gallery::-webkit-scrollbar-track-piece {
-    background-color: #ccc;
-}
-
-#gallery_outer_1 div#gallery::-webkit-scrollbar-thumb {
-    height: 90px;
-    background-color:#0a7eff;
-    border-radius: 3px;
-}
-
-#gallery_outer_1 div#gallery::-webkit-scrollbar-corner {
-    background-color: #f00;
-}
-
-#gallery_outer_1 div#gallery::-webkit-resizer {
-    background-color: #666;
-}
-
-#gallery_outer_1 .g_image {
-    float: Left;
-    clear: both;
-}
-
-#gallery_outer_1 .g_image .thumbimage {
-    margin: 0px 0px 5px 0px;
-}
-
-#gallery_outer_1 .mainimage img {
-    max-height: 100%;
-    max-width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-#gallery_outer_2 .g_image {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 5px 0px;
-}
-
-#gallery_outer_2 .g_image img {
-    max-width: 100%;
-}
-
-#gallery_outer_2 .g_image[data=""] {
-    display: none;
-}
-
-#gallery_outer_3 {
-    height: auto;
-    width: 100%;
-}
-
-#gallery_outer_3 .mainimage,
-#gallery_outer_3 .mainimage div {
-    height: 500px;
-    width: 100%;
-}
-
-#gallery_outer_3 #gallery {
-    height: auto;
-    width: 100%;
-    padding-top: 500px;
-}
-
-#gallery_outer_3 .mainimage {
-    left: 0px;
-}
-
-#gallery_outer_3 #gallery {
-    box-sizing: border-box;
-    text-align: center;
-}
-
-#gallery_outer_3 .g_image {
-    display: inline-block;
-    height: 76px;
-    margin-bottom: 5px;
-}
-
-#gallery_outer_3 .g_image .thumbimage {
-    margin: 10px 3px;
-}
-
-#gallery_outer_3 .g_image .thumbimage li {
-    margin-right: 3px;
-}
-
-#gallery_outer_3 .mainimage img {
-    max-height: 100%;
-    max-width: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-#gallery_outer_3 #gallery [type=checkbox]:checked ~ .mainimage,
-#gallery_outer_1 #gallery [type=checkbox]:checked ~ .mainimage {
-    animation-name: lightbox;
-    animation-duration: 0.5s;
-    padding: 0px;
-    position: fixed;
-    width: 100vw;
-    left: 0px;
-    right: 0px;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-#gallery_outer_3 #gallery [type=checkbox]:checked ~ .mainimage > div,
-#gallery_outer_1 #gallery [type=checkbox]:checked ~ .mainimage > div {
-    background: #fff;
-    position: static;
-    position: relative;
-    box-sizing: content-box;
-    top: 0px;
-    max-height: 80vh;
-    width: 100%;
-    height: auto;
-    max-width: 60vw;
-    margin: auto;
-    margin-top: 10vh;
-    padding: 10px;
-    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.4);
-    border-radius: 6px 6px 0px 0px;
-}
-
-#gallery_outer_3 #gallery [type=checkbox]:checked ~ .mainimage > div img,
-#gallery_outer_1 #gallery [type=checkbox]:checked ~ .mainimage > div img {
-    max-height: 80vh;
-    transform: none;
-    top: auto;
-}
-
-#gallery_outer_3 #gallery [type=checkbox]:checked ~ .mainimage > div::after,
-#gallery_outer_1 #gallery [type=checkbox]:checked ~ .mainimage > div::after {
-    background: #fff;
-    border-radius: 0px 0px 6px 6px;
-    color: #666;
-    content: "Click to close";
-    font-size: 16px;
-    padding: 5px 0px;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-#gallery_outer_3 .g_image[data=""],
-#gallery_outer_1 .g_image[data*="<!-- missing"],
-#gallery_outer_2 .g_image[data*="<!-- missing"],
-#gallery_outer_3 .g_image[data*="<!-- missing"] {
-    display: none;
-}
-
-.center-col .boxtitle,
-#descriptiontitle {
-    background: #057ac0;
-    color: #fff;
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.4em;
-    margin-bottom: 0px !important;
-    border-radius: 0px 0px 0px 0px;
-    margin: 10px 0px 0px 0px;
-    padding: 0 10px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-#description {
-    clear: both;
-    margin-bottom: 10px;
-}
-
-#description #descriptioncontent {
-    padding: 10px;
-    background: none;
-    border: 0px solid #e5e5e5;
-    border-top: none;
-    font-size: 1.5em;
-    font-family: 'Titillium Web', sans-serif;
-    border-radius: 0px 0px 0px 0px;
-    color: #666;
-}
-
-#description #descriptioncontent ul {
-    padding-left: 30px;
-    margin: 12px 0px;
-}
-
-#description #descriptioncontent ul li {
-    list-style: outside;
-    display: list-item;
-    margin: 0px;
-}
-
-#description #descriptioncontent a {
-    color: #196696 !important;
-    text-decoration: underline;
-}
-
-#description #descriptioncontent img {
-    max-width: 100% !important;
-    height: auto !important;
-}
-
-#description #descriptioncontent table {
-    max-width: 100% !important;
-}
-
-#description #descriptioncontent .row {
-    width: 100%;
-}
-
-@keyframes tabOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes tabIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.left-col [type=checkbox] {
-    display: none;
-}
-
-/*
-.left-col label .boxtitle {
-    background: #005eb8;
-    cursor: pointer;
-    position: relative;
-    transform: all ease-in-out 0.4s;
-}
-*/
-.left-col label .boxtitle {
-    background: #005eb8;
-    cursor: pointer;
-    position: relative;
-    transform: scale(1.2);
-    transition: all ease-in-out 0.4s;
-}
-.left-col label .boxtitle:after {
-    content: '\f107';
-    display: block;
-    position: absolute;
-    right: 10px;
-    font-family: 'FontAwesome';
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-}
-
-.left-col [type=checkbox]:checked + label .boxtitle {
-    background: #005eb8;
-}
-
-.left-col [type=checkbox]:checked + label .boxtitle:after {
-    content: '\f106';
-}
-
-.left-col #cat-wrap {
-    display: none;
-}
-
-.left-col #cat-wrap .boxtitle {
-    display: none;
-}
-
-.left-col #cat-1:checked ~ #cat-wrap {
-    display: block;
-}
-
-div#tabs {
-    margin: 10px 0px 0px 0px;
-    display: block;
-}
-
-div#tabs [type=radio] {
-    display: none;
-}
-
-div#tabs label.mobile_tab {
-    display: none;
-}
-
-div#tabs label li {
-    font-size: 1.4em;
-    font-family: 'Titillium Web', sans-serif;
-    border-radius: 0px 0px 0px 0px;
-    display: block;
-    float: left;
-    cursor: pointer;
-    width: 19.8%;
-    text-align: center;
-    background: #3b9ac0;
-    padding: 8px 0px;
-    margin-right: 1px;
-    transition: all 0.5s;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-div#tabs label li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-div#tabs [type=radio]:checked + label li,
-div#tabs label li:hover {
-    background: #005eb8;
-}
-
-div#tabs [type=radio]:checked + label li a,
-div#tabs label li:hover a {
-    color: #fff;
-}
-
-div#tabs #tab-1:checked ~ .content1,
-div#tabs #tab-2:checked ~ .content2,
-div#tabs #tab-3:checked ~ .content3,
-div#tabs #tab-4:checked ~ .content4,
-div#tabs #tab-5:checked ~ .content5 {
-    display: block;
-}
-
-div#tabs #tab-1:checked ~ .content1 .tabcontent,
-div#tabs #tab-2:checked ~ .content2 .tabcontent,
-div#tabs #tab-3:checked ~ .content3 .tabcontent,
-div#tabs #tab-4:checked ~ .content4 .tabcontent,
-div#tabs #tab-5:checked ~ .content5 .tabcontent,
-div#tabs #tab-1:checked ~ .content1 h4,
-div#tabs #tab-2:checked ~ .content2 h4,
-div#tabs #tab-3:checked ~ .content3 h4,
-div#tabs #tab-4:checked ~ .content4 h4,
-div#tabs #tab-5:checked ~ .content5 h4 {
-    animation-name: tabIn;
-    animation-duration: 1.2s;
-}
-
-div#tabs .content {
-    border-radius: 0px 0px 0px 0px;
-    animation-duration: 0.5s;
-    clear: both;
-    padding: 10px;
-    border: 0px solid #e5e5e5;
-    background: none;
-    display: none;
-}
-
-div#tabs .content h4.tabtitle {
-    display: none;
-}
-
-div#tabs .content .tabcontent {
-    white-space: normal;
-    padding: 0px;
-    margin: 0px;
-    font-size: 1.6em;
-    display: block;
-    font-family: 'Titillium Web', sans-serif;
-    color: #666;
-}
-
-div#tabs .content .tabcontent a {
-    color: #196696;
-    text-decoration: underline;
-}
-
-div#tabs label li a {
-    display: block;
-    pointer-events: none;
-}
-
-.center-col {
-    /*#more_items {text-indent: -999em;position: relative;}#more_items::after {text-indent: 0;content: "ITEMS YOU MAY LIKE";position: absolute;display: block;top: 0px;}*/
-}
-
-.center-col .brands li {
-    display: block;
-    float: left;
-    margin: 0;
-    overflow: hidden;
-    width: 20%;
-    padding: 4px 2px;
-}
-
-.center-col .brands li:first-child {
-    padding-left: 0px;
-}
-
-.center-col .brands li:last-child {
-    padding-right: 0px;
-}
-
-.center-col .brands li img {
-    max-width: 100%;
-}
-
-.center-col .brands li:last-child::after {
-    clear: both;
-}
-
-.center-col a.nspromoitem {
-    display: none;
-    background-position: center center;
-    float: left;
-    width: 23%;
-    margin: 10px;
-    margin: 1%;
-    height: 200px;
-}
-
-#magento_gallery img {
-    max-width: 100%;
-}
-
-.m2e-gallery img {
-    max-width: 100%;
-}
-
-#magento_gallery_thumbs .gallery-column-view .gallery-thumbnail {
-    width: 13%;
-}
-
-#magento_gallery_thumbs .gallery-thumbnail li {
-    border: 1px solid#0a7eff;
-}
-
-#magento_gallery_thumbs .gallery-column-view .gallery-image {
-    width: 86%;
-}
-
-#magento_gallery_thumbs .gallery-column-view .gallery-image img {
-    max-width: 100%;
-}
-
-#magento_gallery_thumbs .m2e-gallery .preview-container.vertical {
-    width: 13%;
-    text-align: center;
-}
-
-#magento_gallery_thumbs .m2e-gallery .current.vertical {
-    width: 86%;
-    text-align: center;
-}
-
-#background font {
-    font-size: inherit;
-}
-
-#background #descriptioncontent font {
-    font-size: initial;
-}
-
-div#footer.footer {
-    background: #005eb8 center top;
-    color: #eee;
-    font-size: 1.2em;
-    height: 80px !important;
-    position: relative;
-}
-
-div#footer.footer .footer-logo {
-    width: 126px;
-    height: 57px;
-    display: block;
-    position: absolute;
-    background: url("");  /* footer logo to be changed and hosted at github */
-    top: 50%;
-    left: 50%;
-    transform: translate(-49%, -49%);
-}
-
-div#footer.footer ul {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-div#footer.footer ul li {
-    display: inline-block;
-    margin: 0px 10px;
-}
-
-div#footer.footer ul li a {
-    color: #eee;
-}
-
-div#footer.footer ul li a:hover {
-    color: #ddd;
-}
-
-.footer-wrapper {
-    background: #005eb8;
-}
-
-
-div#design {
-    display: block;
-}
-
-#backup,
-#ns_copyright,
-#seo {
-    display: none;
-}
-
-
-#background #design {
-    background: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-#background #design div {
-    width: 200px;
-    margin: auto;
-    height: 63px;
-    overflow: hidden;
-    text-indent: -400px;
-    font-size: 0em;
-    background-size: 100% auto;
-    background-image: url('https://global.frooition.com/freedom/ebay_global/img/global_logo_2x.png');   /* footer logo to be changed and hosted at github */
-}
-
-
-
-#dummyrule {
-    display: block;
-}
-
-#gallery_outer_3 .mainimage img,
-#gallery_outer_1 .mainimage img {
-    display: block;
-    margin: 0px auto;
-}
-
-#promobox a.nspromoitem {
-    text-align: center;
-}
-
-#promobox a.nspromoitem img {
-    max-width: 150px;
-    max-height: 200px;
-}
-
-
-/* Added 26.10.17 - styling for re-added category classes */
-
-.boxlinks a.catlink {
-    width: 100%;
-}
-
-.boxlinks a.sublink {
-    padding-left: 12px;
-    width: 100%;
-}
-
-.boxlinks a.thirdlvl {
-    font-style: italic;
-    padding-left: 15px;
-    width: 100%;
-}
-                
+<title>eBay</title>
+<table align="center" style="border-spacing: 0px; width: 100%;">
+    <tbody>
+        <tr>
+            <td>
+                <div id="ds_div">
+                    <!-- HTML -->
+                    <style type="text/css">
+                        .header-wrapper,
+                        .subheader-wrapper,
+                        .left-col,
+                        .right-col,
+                        .footer-wrapper,
+                        .boxcontent,
+                        #ns_copyright,
+                        .topbar,
+                        #showcase,
+                        #tabs,
+                        #tab1,
+                        #tab2,
+                        #tab3,
+                        #tab4,
+                        #tab5,
+                        #descriptiontitle,
+                        #design,
+                        #seo {
+                            display: none;
+                        }
+
+                        
+                        #backup {
+                            padding: 10px;
+                            max-width: 80%;
+                            margin: auto;
+                            text-align: center;
+                            font-size: 13px;
+                        }
+                    
+                    </style>
+                    <link rel="stylesheet" href="https://rank73.github.io/ebay_css/combined1.css" >
+
+                    <!-- This is the end of the combined.css file for testing/ to be saved as combined.css and replace the above combined.css file/ to be hosted on github -->
+                    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+                    <div id="background" class="container template">
+                        <div id="container" class="page">
+                            <div class="header-wrapper">
+                                <div id="header" class="header row">
+                                    <a class="homelink" target="_blank" href="https://stores.ebay.co.uk/ephdealsuk"></a>
+                                        <div id="customhtml"></div>
+                                </div>
+                            </div>
+                            <div class="subheader-wrapper">
+                                <div class="subheader row">
+                                    <div class="infobox">
+                                        <ul>
+                                            <li>
+                                                <!--<h2>QUALITY CUSTOMER SERVICE</h2><span>We are here to help</span></li>-->
+                                                <h2>EXCELLENT CUSTOMER SERVICE</h2><span>100% Satisfaction Guaranteed</span></li>
+                                            <li>
+                                                <h2>eBay MONEY BACK GAURANTEE</h2><span>Buy with confidence</span></li>
+                                            <li>
+                                                <h2>FAST AND FREE SHIPPING</h2><span>On all of our items</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-wrapper">
+                                <div id="cols" class="cols row">
+                                    <div id="leftpane" class="left-col">
+                                        <!-- ephdealsuk store search -->
+                                        <ephdealsukleftsearch>
+                                            <div id="search">
+                                                <div class="boxtitle">All Items</div>
+                                                <div class="boxcontent"> <a class="store_button" target="_blank" href="https://stores.ebay.co.uk/ephdealsuk">
+			See our eBay store for more great items &gt;&gt;
+		</a> </div>
+                                                <div class="boxbase"></div>
+                                            </div>
+                                        </ephdealsukleftsearch>
+                                        <!-- end ephdealsuk store search -->
+
+                                        <ephdealsukhelpfullinks>
+                                            <div id="helpful_links" class="boxtitle">Helpful Links</div>
+                                            <div id="helpful_links_content" class="boxlinks"> <a target="_blank" href="https://my.ebay.co.uk/ws/eBayISAPI.dll?AcceptSavedSeller&amp;mode=0&amp;preference=0&amp;sellerid=ephdealsuk&amp;ru=http%3A%2F%2Fcgi.ebay.co.uk%2Fws%2FeBayISAPI.dll%3FViewItem%26item%0&amp;ssPageName=STRK:MEFS:ADDVI">Add to Favourite Sellers</a> <a target="_blank" href="https://feedback.ebay.co.uk/ws/eBayISAPI.dll?ViewFeedback&amp;userid=ephdealsuk">View Feedback</a> <a target="_blank" href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?FindAnswers&amp;requested=ephdealsuk&amp;_trksid=p2050430.m2531.l4583&amp;rt=nc&amp;iid=381447109992">Contact Seller</a> <a target="_blank" href="https://stores.ebay.co.uk/ephdealsuk">Visit seller's eBay Shop</a> <a target="_blank" href="https://ebay.co.uk/usr/ephdealsuk">About Seller Page</a> </div>
+                                            <div id="helpful_links_base" class="boxbase"></div>
+                                        </ephdealsukhelpfullinks>
+                                        <!-- end store categories -->
+                                        <!-- ephdealsuk left custom box -->
+                                        <ephdealsukleftcustombox></ephdealsukleftcustombox>
+                                        <!-- end ephdealsuk left custom box -->
+                                    </div>
+                                    <div id="centerpane" class=" center-col">
+                                        <!-- ephdealsuk top middle custom box -->
+                                        <ephdealsuktopmiddlecustombox></ephdealsuktopmiddlecustombox>
+                                        <!-- end ephdealsuk top middle custom box -->
+                                        <div id="showcase">
+                                            <!-- ephdealsuk item title -->
+                                            <ephdealsukitemtitle>
+                                                <h3>This is the fucking title</h3></ephdealsukitemtitle>
+                                            <!-- end ephdealsuk item title -->
+                                            <!-- ephdealsuk image gallery -->
+                                            <ephdealsukgallery>
+                                                <div id="gallery_outer_1">
+                                                    <div id="gallery">
+                                                        <div class="g_image fimage" data="https://i.ebayimg.com/00/s/MTIwN1gxNTk5/z/0BoAAOSwwRpgYYEB/$_57.JPG?set_id=880000500F" data-layout="repeatable">
+                                                            <input type="radio" id="image-0" autocomplete="off" name="image-group" checked="">
+                                                            <label class="thumbimage" for="image-0">
+                                                                <li><img src="https://i.ebayimg.com/00/s/MTIwN1gxNTk5/z/0BoAAOSwwRpgYYEB/$_57.JPG?set_id=880000500F"></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-0" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-0">
+                                                                <div>
+                                                                    <label for="image--1" class="leftarrow"><span></span></label> <img src="https://i.ebayimg.com/00/s/MTIwN1gxNTk5/z/0BoAAOSwwRpgYYEB/$_57.JPG?set_id=880000500F">
+                                                                    <label for="image-1" data-next-image="https://i.ebayimg.com/00/s/Nzk5WDk2OA==/z/OPMAAOSwKvpgYYEA/$_57.JPG?set_id=880000500F" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="https://i.ebayimg.com/00/s/Nzk5WDk2OA==/z/OPMAAOSwKvpgYYEA/$_57.JPG?set_id=880000500F" data-layout="repeatable">
+                                                            <input type="radio" id="image-1" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-1">
+                                                                <li><img src="https://i.ebayimg.com/00/s/Nzk5WDk2OA==/z/OPMAAOSwKvpgYYEA/$_57.JPG?set_id=880000500F"></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-1" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-1">
+                                                                <div>
+                                                                    <label for="image-0" class="leftarrow"><span></span></label> <img src="https://i.ebayimg.com/00/s/Nzk5WDk2OA==/z/OPMAAOSwKvpgYYEA/$_57.JPG?set_id=880000500F">
+                                                                    <label for="image-2" data-next-image="https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/OxgAAOSwVexgYYEA/$_57.JPG?set_id=8800005007" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/OxgAAOSwVexgYYEA/$_57.JPG?set_id=8800005007" data-layout="repeatable">
+                                                            <input type="radio" id="image-2" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-2">
+                                                                <li><img src="https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/OxgAAOSwVexgYYEA/$_57.JPG?set_id=8800005007"></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-2" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-2">
+                                                                <div>
+                                                                    <label for="image-1" class="leftarrow"><span></span></label> <img src="https://i.ebayimg.com/00/s/NTAwWDUwMA==/z/OxgAAOSwVexgYYEA/$_57.JPG?set_id=8800005007">
+                                                                    <label for="image-3" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-3" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-3">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-3" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-3">
+                                                                <div>
+                                                                    <label for="image-2" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-4" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-4" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-4">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-4" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-4">
+                                                                <div>
+                                                                    <label for="image-3" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-5" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-5" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-5">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-5" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-5">
+                                                                <div>
+                                                                    <label for="image-4" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-6" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-6" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-6">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-6" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-6">
+                                                                <div>
+                                                                    <label for="image-5" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-7" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-7" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-7">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-7" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-7">
+                                                                <div>
+                                                                    <label for="image-6" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-8" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-8" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-8">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-8" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-8">
+                                                                <div>
+                                                                    <label for="image-7" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-9" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-9" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-9">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-9" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-9">
+                                                                <div>
+                                                                    <label for="image-8" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-10" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-10" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-10">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-10" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-10">
+                                                                <div>
+                                                                    <label for="image-9" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-11" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-11" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-11">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-11" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-11">
+                                                                <div>
+                                                                    <label for="image-10" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-12" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-12" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-12">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-12" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-12">
+                                                                <div>
+                                                                    <label for="image-11" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-13" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-13" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-13">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-13" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-13">
+                                                                <div>
+                                                                    <label for="image-12" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-14" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-14" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-14">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-14" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-14">
+                                                                <div>
+                                                                    <label for="image-13" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-15" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-15" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-15">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-15" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-15">
+                                                                <div>
+                                                                    <label for="image-14" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-16" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-16" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-16">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-16" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-16">
+                                                                <div>
+                                                                    <label for="image-15" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-17" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-17" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-17">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-17" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-17">
+                                                                <div>
+                                                                    <label for="image-16" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-18" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-18" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-18">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-18" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-18">
+                                                                <div>
+                                                                    <label for="image-17" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-19" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="g_image fimage" data="" data-layout="repeatable">
+                                                            <input type="radio" id="image-19" autocomplete="off" name="image-group">
+                                                            <label class="thumbimage" for="image-19">
+                                                                <li><img src=""></li>
+                                                            </label>
+                                                            <input type="checkbox" id="mainimage-19" autocomplete="off" class="mainimagecb">
+                                                            <label class="mainimage" for="mainimage-19">
+                                                                <div>
+                                                                    <label for="image-18" class="leftarrow"><span></span></label> <img src="">
+                                                                    <label for="image-20" data-next-image="" class="rightarrow"><span></span></label>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </ephdealsukgallery>
+                                            <!-- end ephdealsuk image gallery --><span id="feedback_msg"> </span>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <!-- ephdealsuk description -->
+                                        <ephdealsukdescription>
+                                            <div id="description">
+                                                <div id="descriptiontitle">Item Description</div>
+                                                <div id="descriptioncontent">product_description</div>                                                    
+                                                <div id="descriptionbase"></div>
+                                            </div>
+                                        </ephdealsukdescription>
+                                        <!-- end ephdealsuk description -->
+                                        <!-- ephdealsuk bottom middle custom box -->
+                                        <ephdealsukbottommiddlecustombox></ephdealsukbottommiddlecustombox>
+                                        <!-- end ephdealsuk bottom middle custom box -->
+                                        <!-- ephdealsuk seller tabs-->
+                                        <ephdealsuktabs>
+                                            <div id="tabs">
+                                                <input type="radio" id="tab-1" name="tab-group-1" checked="">
+                                                <label for="tab-1">
+                                                    <li><a>About Us</a></li>
+                                                </label>
+                                                <label for="tab-1" class="mobile_tab label-tab-1">
+                                                    <li><a>About Us</a></li>
+                                                </label>
+                                                <input type="radio" id="tab-2" name="tab-group-1">
+                                                <label for="tab-2">
+                                                    <li><a>Payment</a></li>
+                                                </label>
+                                                <input type="radio" id="tab-3" name="tab-group-1">
+                                                <label for="tab-3">
+                                                    <li><a>Shipping</a></li>
+                                                </label>
+                                                <input type="radio" id="tab-4" name="tab-group-1">
+                                                <label for="tab-4">
+                                                    <li><a>Returns</a></li>
+                                                </label>
+                                                <input type="radio" id="tab-5" name="tab-group-1">
+                                                <label for="tab-5">
+                                                    <li><a>Terms</a></li>
+                                                </label>
+                                                <div class="content content1">
+                                                    <h4 class="tabtitle">About Us</h4><pre class="tabcontent"><p><span style="color: rgb(66, 66, 66);"><span style="font-family: Verdana; font-size: medium;">Here at EPHDealsUK we are dedicated to providing high quality products with exceptional customer service, We provide fast dispatch of all items quickly whilst offering some of the the best prices you'll find on the internet.</span><br style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><span style="font-family: Verdana; font-size: medium;">Our Stock is largely purchased directly from the manufacturers meaning we are normally able to offer the lowest prices. We aim to match the lowest price for all our products. Please contact us if you find it cheaper elsewhere.</span><span style="font-family: Verdana;">&nbsp;</span></span></span><br></p></pre>
+                                                    <div class="tabbase"></div>
+                                                </div>
+                                                <label for="tab-2" class="mobile_tab label-tab-2">
+                                                    <li><a>Payment</a></li>
+                                                </label>
+                                                <div class="content content2">
+                                                    <h4 class="tabtitle">Payment</h4><pre class="tabcontent"><ul>
+<li>Please make your payment immediately upon selecting 'Buy It Now.' We greatly appreciate your promptness.</li>
+<li>We want to make your payment process as convenient as possible, so we exclusively accept PayPal. With PayPal, you can easily use your major credit card or make a direct transfer from your bank account.</li>
+<li>If you have multiple items to purchase, we're happy to help you save on postage. Please feel free to reach out to us before or after placing your order, and we'll be delighted to discuss combining the shipping for you.</li>
+</ul></pre>
+                                                    <div class="tabbase"></div>
+                                                </div>
+                                                <label for="tab-3" class="mobile_tab label-tab-3">
+                                                    <li><a>Shipping</a></li>
+                                                </label>
+                                                <div class="content content3">
+                                                    <h4 class="tabtitle">Shipping</h4><pre class="tabcontent"><ul>
+
+<li>Great news! We provide free standard postage for all orders within the UK. No extra cost to worry about!</li>
+<li>When you place an order before 2pm, we strive to get it posted on the same day. Quick and efficient service is our priority!</li>
+<li>For most of our domestic orders, we rely on Royal Mail 24 and 48 services. This means you can expect your items to arrive within a speedy 1-3 working days. Please keep in mind that the delivery dates suggested by eBay are estimates and may not always be accurate.</li>
+<li>When it comes to international orders, we trust the reliable services of Royal Mail. Although delivery times may vary, most items arrive within two weeks. However, please note that customs procedures can sometimes cause substantial delays.</li>
+<li>We want to ensure the safe delivery of your large orders, so they will require a signature upon receipt. In the event that you're not available, the item may be left with a friendly neighbor or at your local sorting office. It's worth mentioning that occasionally the postal service may forget to leave a card, so please keep an eye out.</li>
+</ul></pre>
+                                                    <div class="tabbase"></div>
+                                                </div>
+                                                <label for="tab-4" class="mobile_tab label-tab-4">
+                                                    <li><a>Returns</a></li>
+                                                </label>
+                                                <div class="content content4">
+                                                    <h4 class="tabtitle">Returns</h4><pre class="tabcontent"><ul>
+                                                        <li>Your satisfaction is our top priority, which is why we gladly accept returns for any reason within 30 days of your purchase. Simply send it back to us in the same condition as it was sent, along with the original packaging.</li>
+                                                        <li>If the product(s) you receive are faulty, we've got you covered. We will reimburse the cost of return postage, ensuring a hassle-free experience for you.</li>
+                                                        <li>For your peace of mind, we strongly recommend keeping the proof of postage as the return process is the responsibility of the customer.</li>
+                                                        <li>Your satisfaction means everything to us, so if you find yourself less than entirely satisfied, please don't hesitate to reach out. We kindly request that you give us the opportunity to make things right before leaving feedback. We are committed to resolving any issues and ensuring your utmost satisfaction.</li>
+</ul></pre>
+                                                    <div class="tabbase"></div>
+                                                </div>
+                                                <label for="tab-5" class="mobile_tab label-tab-5">
+                                                    <li><a>Terms</a></li>
+                                                </label>
+                                                <div class="content content5">
+                                                    <h4 class="tabtitle">Terms</h4><pre class="tabcontent"><ul>
+                                                    <li><a target="blank" href="https://ebay.co.uk/usr/ephdealsuk">Click here for Ebay terms for buyers</a></li>
+                                                </ul></pre>
+                                                    <div class="tabbase"></div>
+                                                </div>
+                                            </div>
+                                        </ephdealsuktabs>
+                                        <!-- end ephdealsuk seller tabs-->
+                                    </div>
+                                    <div id="rightpane" class="right-col">
+                                        <!-- ephdealsuk helpful links box -->
+                                        <!-- end ephdealsuk helpful links box -->
+                                        <!-- ephdealsuk cross promotion -->
+                                        <ephdealsukcrosspromo>
+                                            <div>
+                                                <div id="more_items" class="boxtitle">More Items!</div>
+                                                <div id="more_items_content" class="boxcontent">
+                                                    <div id="promobox"><a id="promo_default" style="display:none;" href="https://stores.ebay.co.uk/ephdealsuk" target="_blank">View more great items</a>
+                                                        <a id="hitem_0" class="nspromoitem hardpromoitem" style="display:block;" href="https://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&amp;item=193687320783" target="_blank">
+                                                            <div class="ephdealsukpromocontainer">
+                                                                <div class="ephdealsukpromoimg"><img class="pimg" src="https://i.ebayimg.com/00/s/NTAwWDcwNA==/z/YcEAAOSwzx1gYYPa/$_12.JPG?set_id=880000500F"></div>
+                                                                <div class="ephdealsukpromotitle">Hourglass Edifice Part Mineral Glass round for Casio EQB-500 ECB-500 - 10482564</div>
+                                                                <div class="ephdealsukpromoprice" data-currconv="0">$16.51</div>
+                                                            </div>
+                                                        </a>
+                                                        <a id="hitem_1" class="nspromoitem hardpromoitem" style="display:block;" href="https://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&amp;item=195010278100" target="_blank">
+                                                            <div class="ephdealsukpromocontainer">
+                                                                <div class="ephdealsukpromoimg"><img class="pimg" src="https://i.ebayimg.com/00/s/ODM4WDg3MQ==/z/hMYAAOSwqXhgYX-7/$_12.JPG?set_id=880000500F"></div>
+                                                                <div class="ephdealsukpromotitle">Reloj Vidrio Mineral Cristal - Abovedado Plano Inferior SD-1.5mm Grueso 23mmA</div>
+                                                                <div class="ephdealsukpromoprice" data-currconv="0">€6,28</div>
+                                                            </div>
+                                                        </a>
+                                                        <a id="hitem_2" class="nspromoitem hardpromoitem" style="display:block;" href="https://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&amp;item=195010277639" target="_blank">
+                                                            <div class="ephdealsukpromocontainer">
+                                                                <div class="ephdealsukpromoimg"><img class="pimg" src="https://i.ebayimg.com/00/s/MjYzWDUwMA==/z/LtMAAOSwe9hhpgLl/$_57.JPG?set_id=2"></div>
+                                                                <div class="ephdealsukpromotitle">Acrylique Plastique Verre Cristal Pour Omega Montre avec Date Lentille 30.6 Or #</div>
+                                                                <div class="ephdealsukpromoprice" data-currconv="0">C $26.51</div>
+                                                            </div>
+                                                        </a>
+                                                        <a id="hitem_3" class="nspromoitem hardpromoitem" style="display:block;" href="https://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&amp;item=193868458582" target="_blank">
+                                                            <div class="ephdealsukpromocontainer">
+                                                                <div class="ephdealsukpromoimg"><img class="pimg" src="https://i.ebayimg.com/00/s/NTAwWDcwNA==/z/~DgAAOSw60VgEsJJ/$_57.JPG?set_id=2"></div>
+                                                                <div class="ephdealsukpromotitle">Hourglass Edifice Part Mineral Glass round for Casio EQB-500 ECB-500 - 10482564</div>
+                                                                <div class="ephdealsukpromoprice" data-currconv="0">$13.40</div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="clear"></div>
+                                                        <div id="more_items_base" class="boxbase"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <style>
+                                                .more-items-wrapper a.nspromoitem {
+                                                    min-height: 210px;
+                                                }
+                                                
+                                                .nspromoitem .ephdealsukpromocontainer {
+                                                    background-color: #fff;
+                                                    width: 100%;
+                                                    padding: 3px;
+                                                    text-align: center;
+                                                }
+                                                
+                                                .nspromoitem .ephdealsukpromoimg {
+                                                    height: 126px;
+                                                }
+                                                
+                                                #promobox a.nspromoitem img.pimg {
+                                                    max-width: 134px;
+                                                    max-height: 126px;
+                                                    position: relative;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    transform: translateY(-50%);
+                                                    transform: translateY(-50%);
+                                                }
+                                                
+                                                .nspromoitem .ephdealsukpromotitle {
+                                                    color: #000;
+                                                    height: 54px;
+                                                    padding: 5px 0px 0px 0px;
+                                                    font-size: 15px;
+                                                    line-height: 12px;
+                                                    overflow: hidden;
+                                                }
+                                                
+                                                .nspromoitem .ephdealsukpromoprice {
+                                                    color: #000;
+                                                    font-size: 18px;
+                                                    font-weight: 700;
+                                                }
+                                                
+                                                .nspromoitem .ephdealsukpromocontainer:hover .ephdealsukpromotitle {
+                                                    text-decoration: underline;
+                                                }
+                                            </style>
+                                        </ephdealsukcrosspromo>
+                                        <!-- end ephdealsuk cross promotion -->
+                                        <!-- right custom box -->
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="footer-wrapper">
+                                <div id="footer" class="footer row">
+                                    <!-- ephdealsuk custom footer custom content -->
+                                    <ephdealsukfooter><span class="footer-logo"></span></ephdealsukfooter>
+                                    <!-- end ephdealsuk custom footer content -->
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://pages.ebay.com/seller-center/listing-and-marketing/third-party-listing-tools.html" target="_blank">
+                            <div id="design">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table><span id="closeHtml"></span>
