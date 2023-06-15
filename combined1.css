@@ -72,8 +72,8 @@ ul.tablinks,
 /* Media Queries for Responsiveness */
 
 @media (max-width: 960px) {
-    div#leftpane.left-col
-
+    div#leftpane.left-col,
+    div#rightpane.right-col
 {
         display: none;
     }
@@ -81,8 +81,8 @@ ul.tablinks,
 
 @media (max-width: 768px) {
     div#leftpane.left-col,
-    div#rightpane.right-col
- {
+    div#rightpane.right-col,
+    div#centerpane.center-col {
         width: 100%;
         padding: 0;
     }
@@ -167,7 +167,6 @@ ul.tablinks,
   .container .footer-wrapper,
   .container .boxcontent,
   .container #showcase,
- 
   .container #descriptiontitle {
     display: block;
     /* Adjust styles for even smaller screens */
@@ -770,30 +769,8 @@ a.homelink::before {
         width: 100%; /* The gallery width will adjust to the width of the screen */
     }
 }
-    #gallery_outer_1 div#gallery::-webkit-scrollbar {
-        width: 8px;
-        height: 20px;
-    }
-    #gallery_outer_1 div#gallery::-webkit-scrollbar-button {
-        background-color: #ccc;
-    }
-    #gallery_outer_1 div#gallery::-webkit-scrollbar-track {
-        background-color: #ccc;
-    }
-    #gallery_outer_1 div#gallery::-webkit-scrollbar-track-piece {
-        background-color: #ccc;
-    }
-    #gallery_outer_1 div#gallery::-webkit-scrollbar-thumb {
-        height: 90px;
-        background-color:#0a7eff;
-        border-radius: 3px;
-    }
-    #gallery_outer_1 div#gallery::-webkit-scrollbar-corner {
-        background-color: #f00;
-    }
-    #gallery_outer_1 div#gallery::-webkit-resizer {
-        background-color: #666;
-    }
+
+
     #gallery_outer_1 .g_image {
         float: Left;
         clear: both;
@@ -1113,6 +1090,27 @@ div#tabs label li a {
     display: block;
     pointer-events: none;
 }
+@media screen and (max-width: 640px) {
+  div#tabs label li {
+    width: 100%; /* Make each tab take up the full width */
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 5px; /* Add some spacing between tabs */
+  }
+
+  div#tabs [type=radio]:checked + label li,
+  div#tabs label li:hover {
+    background: #3b9ac0; /* Adjust the background color for active and hovered tabs */
+  }
+
+  div#tabs [type=radio]:checked + label li a,
+  div#tabs label li:hover a {
+    color: #fff; /* Adjust the text color for active and hovered tabs */
+  }
+  
+  div#tabs .content {
+    padding: 10px 5px; /* Add some padding to the content */
+  }
+}
     .center-col {
         /*#more_items {text-indent: -999em;position: relative;}#more_items::after {text-indent: 0;content: "ITEMS YOU MAY LIKE";position: absolute;display: block;top: 0px;}*/
     }
@@ -1260,3 +1258,18 @@ div#tabs label li a {
         display: block;
         margin: 0px auto;
     }
+
+/* Media query for screens with a maximum width of 640px */
+@media screen and (max-width: 480px) {
+  /* Hide the thumbnail images */
+  #gallery_outer_1 .g_image {
+    display: none;
+  }
+  
+  /* Adjust the main image to occupy the full width */
+  #gallery_outer_1 .mainimage {
+    left: 0;
+    min-width: auto;
+    width: 100%;
+  }
+}
