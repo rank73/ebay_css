@@ -1260,7 +1260,7 @@ div#tabs label li a {
     }
 
 /* Media query for screens with a maximum width of 640px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {}
   /* Hide the thumbnail images */
   #gallery_outer_1 .g_image {
     display: none;
@@ -1272,4 +1272,3 @@ div#tabs label li a {
     min-width: auto;
     width: 100%;
   }
-}
