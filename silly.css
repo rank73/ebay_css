@@ -916,7 +916,7 @@ img {
   background-color: #eeeeee;
 }
 #template-5 .header {
-  background-color: #005eb8;
+  background-color: #057ac0;
 }
 #template-5 .header .header__brand .header__logo {
   font-family: "Exo 2";
@@ -963,22 +963,22 @@ img {
 }
 #template-5 .menu {
   font-family: "Open Sans Condensed";
-  background-color: #ffc857;
-  border-bottom-color: #005eb8;
+  background-color: #057ac0;
+  border-bottom-color: #fff;
 }
 #template-5 .menu .menu__item a {
   background-color: #ffc857;
-  color: #005eb8;
-  border-color: #005eb8;
+  color: #057ac0;
+  border-color: #057ac0;
 }
 #template-5 .menu .menu__item a:hover {
-  background-color: #005eb8;
+  background-color: #057ac0;
   color: #ffc857;
 }
 #template-5 .content .content__header .content__title {
   font-family: "Open Sans";
-  color: #005eb8;
-  border-color: #005eb8;
+  color: #057ac0;
+  border-color: #057ac0;
 }
 #template-5 .content .content__wrapper {
   background: #ffffff;
@@ -989,7 +989,7 @@ img {
   color: #444444;
 }
 #template-5 .content .content__bulletpoints .bulletpoints__item .fa {
-  color: #005eb8;
+  color: #057ac0;
 }
 #template-5 .content .content__bulletpoints {
   font-family: "Open Sans";
@@ -1004,32 +1004,32 @@ img {
 }
 #template-5 .aside .aside-block .aside-block__title {
   font-family: "Open Sans Condensed";
-  color: #005eb8;
+  color: #057ac0;
 }
 #template-5 .images .image-wrapper img {
-  border-color: #005eb8;
+  border-color: #057ac0;
   background-color: #ffc857;
 }
 #template-5 .content__gallery .thumb__float {
-  border-color: #005eb8;
+  border-color: #057ac0;
 }
 #template-5 .content__gallery .gallery__prev-next a {
-  color: #005eb8;
+  color: #057ac0;
 }
 #template-5 .content__gallery {
   background: rgba(0, 0, 0, 0.1);
 }
 #template-5 .tabs__label {
   background: #ffc857;
-  color: #005eb8;
-  border-color: #005eb8;
+  color: #057ac0;
+  border-color: #057ac0;
 }
 #template-5 .tabs__label:hover {
-  background: #005eb8;
+  background: #057ac0;
   color: #ffc857;
 }
 #template-5 .tabs__box {
-  border-color: #005eb8;
+  border-color: #057ac0;
 }
 #template-5 .tabs__box--content {
   background: #ffffff;
