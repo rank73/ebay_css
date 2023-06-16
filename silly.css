@@ -557,8 +557,8 @@ img {
   font-size: 64px;
   font-weight: 700;
   color: #c0ca33;
-  border-bottom: 1px solid #c0ca33;
-  padding-bottom: 6px;
+  border-bottom: 6px solid #fff;
+  padding-bottom: -14px;
 }
 #template-5 .header .header__brand .header__logo img {
   max-width: 50%;
@@ -929,10 +929,10 @@ img {
 }
 #template-5 .header .header__contact {
   font-family: "Exo 2";
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .header .header__contact a {
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .footer {
   background-color: #005eb8;
