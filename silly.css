@@ -758,13 +758,12 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
 }
 
 .menu .menu__item {
-  flex: 1 0 33.33%; /* Divide equally into three columns */
+  flex: 1;
   text-align: center;
   padding: 10px; /* Add padding for space before the edge of the box */
   box-sizing: border-box; /* Include padding in the total width */
@@ -777,10 +776,6 @@ img {
   padding: 18px 0;
   height: 100%; /* Ensure all boxes have equal height */
   box-sizing: border-box; /* Include padding in the total height */
-}
-
-.menu .menu__item:last-child a {
-  border-right: none; /* Remove right border from the last menu item */
 }
 
 .menu .menu__item a:hover {
