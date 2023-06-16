@@ -775,6 +775,8 @@ img {
   color: #263238;
   border-right: 1px solid #263238;
   padding: 18px 0;
+  height: 100%; /* Ensure all boxes have equal height */
+  box-sizing: border-box; /* Include padding in the total height */
 }
 
 .menu .menu__item:last-child a {
