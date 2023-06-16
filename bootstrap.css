@@ -298,11 +298,11 @@ hr {
   cursor: pointer;
 }
 .container {
+  margin-top: 20px; /* Add this line */
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  vertical-align: -10px;
 }
 @media (min-width: 768px) {
   .container {
