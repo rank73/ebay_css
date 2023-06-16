@@ -757,6 +757,13 @@ img {
   background: #263238;
   color: #b0bec5;
 }
+
+#template-5 .menu .menu__item .subtext {
+  display: block;
+  font-size: smaller;
+  color: #b0bec5;
+  margin-top: 5px;
+}
 @media (max-width: 768px) {
   #template-5 .menu .menu__item a {
     border-right: 0;
