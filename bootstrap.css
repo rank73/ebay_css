@@ -298,7 +298,6 @@ hr {
   cursor: pointer;
 }
 .container {
-  margin-top: -10px; /* Add this line */
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
