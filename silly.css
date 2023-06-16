@@ -925,7 +925,7 @@ img {
 }
 #template-5 .header .header__brand .header__slogan {
   font-family: "Exo 2";
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .header .header__contact {
   font-family: "Exo 2";
@@ -938,28 +938,28 @@ img {
   background-color: #005eb8;
 }
 #template-5 .footer .footer__contact {
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .footer .footer__contact a {
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .footer-block .footer-block__body .menu .menu__item a {
-  color: #ffc857;
+  color: #fff;
   background: none;
 }
 #template-5 .footer-block .footer-block__body .btn {
-  background-color: #ffc857;
+  background-color: #fff;
 }
 #template-5 .footer-block .footer-block__body .btn:hover {
-  background-color: #ffc857;
+  background-color: #fff;
 }
 #template-5 .footer-block .footer-block__title {
   font-family: "Open Sans Condensed";
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .footer-block .footer-block__body {
   font-family: "Open Sans Condensed";
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .menu {
   font-family: "Open Sans Condensed";
@@ -967,13 +967,13 @@ img {
   border-bottom-color: #fff;
 }
 #template-5 .menu .menu__item a {
-  background-color: #ffc857;
+  background-color: #fff;
   color: #057ac0;
   border-color: #057ac0;
 }
 #template-5 .menu .menu__item a:hover {
   background-color: #057ac0;
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .content .content__header .content__title {
   font-family: "Open Sans";
@@ -996,7 +996,7 @@ img {
   color: #444444;
 }
 #template-5 .aside {
-  background-color: #ffc857;
+  background-color: #fff;
 }
 #template-5 .aside-block .aside-block__body {
   font-family: "Open Sans Condensed";
@@ -1008,7 +1008,7 @@ img {
 }
 #template-5 .images .image-wrapper img {
   border-color: #057ac0;
-  background-color: #ffc857;
+  background-color: #fff;
 }
 #template-5 .content__gallery .thumb__float {
   border-color: #057ac0;
@@ -1020,13 +1020,13 @@ img {
   background: rgba(0, 0, 0, 0.1);
 }
 #template-5 .tabs__label {
-  background: #ffc857;
+  background: #fff;
   color: #057ac0;
   border-color: #057ac0;
 }
 #template-5 .tabs__label:hover {
   background: #057ac0;
-  color: #ffc857;
+  color: #fff;
 }
 #template-5 .tabs__box {
   border-color: #057ac0;
