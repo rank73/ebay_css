@@ -561,7 +561,7 @@ img {
   padding-bottom: 6px;
 }
 #template-5 .header .header__brand .header__logo img {
-  max-width: 80%;
+  max-width: 50%;
 }
 @media (max-width: 480px) {
   #template-5 .header .header__brand .header__logo {
@@ -703,10 +703,10 @@ img {
   font-family: Titillium Web, sans-serif;
 }
 #template-5 .footer__logo:before {
-  content: "&#x45;&#x72;&#x73;&#x74;&#x65;&#x6C;&#x6C;&#x74;&#x20;&#x6D;&#x69;&#x74; ";
+  content: " ";
 }
 #template-5 .footer__logo .text:before {
-  content: "&#x45;&#x73;&#x65;&#x6C;&#x74;";
+  content: "";
 }
 #template-5 .no-margin {
   margin: 0 !important;
@@ -916,7 +916,7 @@ img {
   background-color: #eeeeee;
 }
 #template-5 .header {
-  background-color: #19647e;
+  background-color: #005eb8;
 }
 #template-5 .header .header__brand .header__logo {
   font-family: "Exo 2";
@@ -935,7 +935,7 @@ img {
   color: #ffc857;
 }
 #template-5 .footer {
-  background-color: #19647e;
+  background-color: #005eb8;
 }
 #template-5 .footer .footer__contact {
   color: #ffc857;
@@ -964,21 +964,21 @@ img {
 #template-5 .menu {
   font-family: "Open Sans Condensed";
   background-color: #ffc857;
-  border-bottom-color: #19647e;
+  border-bottom-color: #005eb8;
 }
 #template-5 .menu .menu__item a {
   background-color: #ffc857;
-  color: #19647e;
-  border-color: #19647e;
+  color: #005eb8;
+  border-color: #005eb8;
 }
 #template-5 .menu .menu__item a:hover {
-  background-color: #19647e;
+  background-color: #005eb8;
   color: #ffc857;
 }
 #template-5 .content .content__header .content__title {
   font-family: "Open Sans";
-  color: #19647e;
-  border-color: #19647e;
+  color: #005eb8;
+  border-color: #005eb8;
 }
 #template-5 .content .content__wrapper {
   background: #ffffff;
@@ -989,7 +989,7 @@ img {
   color: #444444;
 }
 #template-5 .content .content__bulletpoints .bulletpoints__item .fa {
-  color: #19647e;
+  color: #005eb8;
 }
 #template-5 .content .content__bulletpoints {
   font-family: "Open Sans";
@@ -1004,32 +1004,32 @@ img {
 }
 #template-5 .aside .aside-block .aside-block__title {
   font-family: "Open Sans Condensed";
-  color: #19647e;
+  color: #005eb8;
 }
 #template-5 .images .image-wrapper img {
-  border-color: #19647e;
+  border-color: #005eb8;
   background-color: #ffc857;
 }
 #template-5 .content__gallery .thumb__float {
-  border-color: #19647e;
+  border-color: #005eb8;
 }
 #template-5 .content__gallery .gallery__prev-next a {
-  color: #19647e;
+  color: #005eb8;
 }
 #template-5 .content__gallery {
   background: rgba(0, 0, 0, 0.1);
 }
 #template-5 .tabs__label {
   background: #ffc857;
-  color: #19647e;
-  border-color: #19647e;
+  color: #005eb8;
+  border-color: #005eb8;
 }
 #template-5 .tabs__label:hover {
-  background: #19647e;
+  background: #005eb8;
   color: #ffc857;
 }
 #template-5 .tabs__box {
-  border-color: #19647e;
+  border-color: #005eb8;
 }
 #template-5 .tabs__box--content {
   background: #ffffff;
