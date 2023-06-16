@@ -572,7 +572,7 @@ img {
   font-family: Exo\2, sans-serif;
   font-size: 39px;
   font-weight: 400;
-  color: #dce775;
+  color: #fff;
 }
 @media (max-width: 480px) {
   #template-5 .header .header__brand .header__slogan {
@@ -585,10 +585,10 @@ img {
   font-size: 23px;
   font-weight: 400;
   text-align: center;
-  color: #dce775;
+  color: #fff;
 }
 #template-5 .header .header__contact a {
-  color: #dce775;
+  color: #fff;
 }
 #template-5 .header .header__contact .fa {
   margin-right: 6px;
@@ -618,7 +618,7 @@ img {
   font-family: Open Sans Condensed, sans-serif;
   font-size: 26px;
   font-weight: 700;
-  color: #dce775;
+  color: #fff;
   margin-top: 0;
   margin-bottom: 9.6px;
 }
@@ -631,10 +631,10 @@ img {
   font-family: Open Sans Condensed, sans-serif;
   font-size: 21px;
   font-weight: 400;
-  color: #dce775;
+  color: #fff;
 }
 #template-5 .footer-block .footer-block__body a {
-  color: #dce775;
+  color: #fff;
 }
 #template-5 .footer-block .footer-block__body .btn {
   background-color: #c0ca33;
@@ -647,7 +647,7 @@ img {
   display: inline-block;
 }
 #template-5 .footer-block .footer-block__body .btn:hover {
-  background-color: #dce775;
+  background-color: #fff;
 }
 #template-5 .footer-block .footer-block__body .menu {
   font-family: inherit;
@@ -859,7 +859,7 @@ img {
   max-height: 100%;
 }
 #template-5 .aside {
-  background: #dce775;
+  background: #fff;
   overflow: hidden;
 }
 #template-5 .aside .container {
