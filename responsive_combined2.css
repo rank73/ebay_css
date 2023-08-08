@@ -1,0 +1,61 @@
+
+/* Existing CSS */
+
+                        .header-wrapper,
+                        .subheader-wrapper,
+                        .left-col,
+                        .right-col,
+                        .footer-wrapper,
+                        .boxcontent,
+                        #ns_copyright,
+                        .topbar,
+                        #showcase,
+                        #tabs,
+                        #tab1,
+                        #tab2,
+                        #tab3,
+                        #tab4,
+                        #tab5,
+                        #descriptiontitle,
+                        #design,
+                        #seo {
+                            display: none;
+                        }
+                        
+                        #descriptioncontent,
+                        #backup {
+                            font-family: sans-serif;
+                        }
+                        
+                        #backup {
+                            padding: 10px;
+                            max-width: 80%;
+                            margin: auto;
+                            text-align: center;
+                            font-size: 13px;
+                        }
+                    
+
+/* Media Queries */
+
+/* Mobile (small) */
+@media (max-width: 576px) {
+    /* Adjust styles as needed for small mobile devices */
+    /* Example: */
+    /* #backup { padding: 5px; } */
+}
+
+/* Mobile (large) */
+@media (max-width: 768px) {
+    /* Adjust styles as needed for large mobile devices */
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    /* Adjust styles as needed for tablets */
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+    /* Adjust styles as needed for desktops */
+}
