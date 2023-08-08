@@ -67,12 +67,12 @@ darker blue #110aff
 
 div#leftpane.left-col,
 div#rightpane.right-col {
-    width: 170px;
+    width: 45%;
     padding: 10px;
 }
 
 div#centerpane.center-col {
-    width: 760px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -168,7 +168,7 @@ ul.tablinks,
 }
 /* end of experimental */ 
 div.row {
-    width: 1100px;
+    width: 100%;
     margin: auto;
 }
 
@@ -210,7 +210,7 @@ h6 {
 a.homelink {
     display: block;
     width: 100%;
-    width: 800px;
+    width: 100%;
     height: 160px;
     position: absolute;
     top: 50%;
@@ -267,7 +267,7 @@ div#header {
 
 .subheader .infobox ul li {
     float: left;
-    width: 360px;
+    width: 100%;
     border: 2px solid #fff;
     text-align: center;
     background: #3b9ac0;
@@ -1330,3 +1330,9 @@ div#design {
 }
                     </style>
                     <!-- This is the end of the combined.css file for testing/ to be saved as combined.css and replace the above combined.css file/ to be hosted on github -->
+@media only screen and (min-width: 768px) {
+    div#leftpane.left-col,
+    div#rightpane.right-col {
+        width: 25%;  /* Adjusted width for larger screens */
+    }
+}
